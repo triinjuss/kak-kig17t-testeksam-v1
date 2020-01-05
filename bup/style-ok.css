@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
+
+:root {
+    --green: hsla(141, 73%, 42%, 1);
+    --yellow: hsla(61, 100%, 87%, 1);
+    --purple: hsla(266, 85%, 65%, 1);
+    --gray: hsla(129, 6%, 24%, 1);
+    --gray-dark: hsla(0, 0%, 25%, 1);
+    --white: #fff;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a {
+    cursor: pointer;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+    width: 100%;
+    height: 50vh;
+    padding: 5vw;
+    background: var(--green);
+}
+
+.hero__heading {
+    margin: 0 0 1rem 0;
+    font-size: 15vw;
+    line-height: 85%;
+    font-weight: 900;
+    text-align: center;
+    color: var(--yellow);
+    text-shadow: 0px 0.1ch 0.1ch hsla(0, 0%, 0%, 0.25);
+}
+
+.hero__subheading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    max-width: 600px;
+    padding: 2rem;
+    color: var(--green);
+    text-decoration: none;
+}
+.card__icon{
+    width: 15vw;
+    height: auto;
+    max-width:80px;
+    min-width:40px;
+}
+.card__title {
+    font-size: 1.7rem;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--green);
+    margin: 0.85rem 0;
+}
+.card__description {
+    margin: 0;
+    line-height: 140%;
+    font-size:1.3rem;
+    text-align: center;
+    color: var(--gray);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    min-height:160px;
+    background: var(--gray-dark);
+    border-bottom: 1rem solid var(--green);
+}
+.footer__title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+
+@media (min-width: 768px) { 
+    .hero__heading {
+        font-size: 9vw;
+        transform: rotate(-3deg);
+    }
+    .hero__subheading {
+        font-size: 1.6rem;
+        transform: rotate(-3deg);
+    }
+    .card__description {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 1024px) { 
+    .hero__subheading {
+        width: 75vw;
+        font-size: 1.6vw;
+        text-align: left;
+    }
+    .hero__subheading:last-child {
+        text-align: right;
+    }
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 80%;
+        padding: 10vh 0;
+        max-width: 1200px;
+    }
+    .card {
+        flex: 0 1 32.3%;
+        box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.15);
+        border-radius: 0.75rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .card:hover {
+        background: var(--yellow);
+        box-shadow: 0 3px 9px 1px hsla(0, 0%, 0%, 0.25);
+    }
+    .card__icon{
+        width: 8vw;
+        height: auto;
+        max-width:80px;
+        min-width:60px;
+    }
+    .card__title {
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    .footer {
+        border-bottom: 2rem solid var(--purple);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+@media (min-width: 1024px) { 
+    .card__title::after {
+        content: "💩";
+        font-size: 875%;
+    }
+} */
