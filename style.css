@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
 
 :root {
     --green: hsla(141, 0%, 42%, 1);
@@ -35,21 +35,30 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 20px;
+    min-height: 300px;
     width: 100%;
-    padding: 0;
+    padding: 20px;
+    background-color: #1DB954;
 }
 
+/* fariina Elupuu */
 .hero__heading {
     margin: 0 0 1rem 0;
     text-align: center;
-    color: var(--yellow);
+    color:#FEFFBB;
+    font-weight: 900px;
+    font-size: 64px;
+  
+    
 }
-
+/*  tere ja see on minu port*/
 .hero__subheading {
     font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--white);
+  
 }
 
 .content {
@@ -65,9 +74,11 @@ a {
     align-items: center;
     justify-content: top;
     max-width: 600px;
-    padding: 0;
-    color: var(--green);
+    color: #1DB954;
     text-decoration: none;
+    width: 600px;
+    padding: 20px;
+    
 }
 .card__icon{
     width: 15vw;
@@ -77,29 +88,36 @@ a {
 }
 .card__title {
     font-size: 1.7rem;
-    color: var(--green);
+    color: #1DB954;
     margin: 0.85rem 0;
+    text-decoration: underline;
+    text-align: center;
 }
 .card__description {
     margin: 0;
-    line-height: 350%;
+    line-height: 140%;
     font-size:1.3rem;
-    color: var(--gray);
+    color: #1DB954;
+    text-align: center;
+    font-size: 16px;
+    
 }
 
 .footer {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 20vh;
     min-height:160px;
-    background: var(--gray-dark);
-    border-bottom: 1rem solid var(--green);
+    background: #39403A;
+    border-bottom: 1rem solid #1DB954;
 }
 .footer__title{
     font-size: 3rem;
-    color: var(--yellow);
+    font-weight: 700;
+    color: #FEFFBB;
 }
 
 
@@ -107,10 +125,13 @@ a {
     .hero__heading {
         font-size: 9vw;
         transform: rotate(-3deg);
+       
+
     }
     .hero__subheading {
         font-size: 1.6rem;
         transform: rotate(-3deg);
+        font-weight: 900;
     }
     .card__description {
         font-size: 1.5rem;
@@ -122,10 +143,10 @@ a {
     .hero__subheading {
         width: 75vw;
         font-size: 1.6vw;
-        order: 2;
+       
     }
     .hero__subheading:last-child {
-        text-align: center;
+        text-align: right;
     }
     .content {
         flex-direction: row;
@@ -138,11 +159,13 @@ a {
     .card {
         flex: 0 1 32.3%;
         transition: all 0.5s ease-in-out;
+        box-shadow: 0 2px 6px 0px;
+        border-radius: 8px;
     }
-    /* .card:hover {
-        background: var(--yellow);
+    .card:hover {
+        background:  #FEFFBB;
         box-shadow: 0 3px 9px 1px hsla(0, 0%, 0%, 0.25);
-    } */
+    }
     .card__icon{
         width: 8vw;
         height: auto;
@@ -150,11 +173,11 @@ a {
         min-width:60px;
     }
     .card__title {
-        font-size: 2rem;
+        font-size: 22px;
         text-decoration: none;
     }
     .footer {
-        border-bottom: 2rem solid var(--purple);
+        border-bottom: 2rem solid    #1DB954;
     }
 }
 
@@ -363,9 +386,9 @@ a {
 
 
 
-@media (min-width: 1024px) { 
-    .card::after {
-        content: "🙃";
-        font-size: 375%;
+/* @media (min-width: 1024px) { 
+    /* .card::after {
+        content: "🙃"; */
+        /* font-size: 375%; */
     }
-}
+} */
